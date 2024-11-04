@@ -1,5 +1,5 @@
+package task1;
 import java.util.concurrent.ThreadLocalRandom;
-
 import static java.lang.System.exit;
 
 public class CallbackClient {

@@ -1,3 +1,5 @@
+package task1;
+
 import java.io.IOException;
 
 public class CallbackCaller extends Thread{
