@@ -1,6 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Counter implements Runnable{
+public class Counter {
     private int INCREMENT_AMOUNT = 20;
     private int count;
 
@@ -16,19 +16,8 @@ public class Counter implements Runnable{
         count++;
     }
 
-    @Override
-    public void run() {
-        try {
-            for(int i=0;i<INCREMENT_AMOUNT;i++) {
-                synchronized (this) {
-                    wait(ThreadLocalRandom.current().nextInt(1000, 3001));
-                }
+    public void count() {
                 increment();
                 System.out.println(count);
-            }
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
     }
 }

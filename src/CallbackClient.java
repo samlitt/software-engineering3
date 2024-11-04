@@ -1,12 +1,21 @@
+import java.util.concurrent.ThreadLocalRandom;
+
 public class CallbackClient {
     boolean stop;
+    Counter counter = new Counter();
     public CallbackClient() {
         stop = false;
         CallbackCaller caller = new CallbackCaller(this); // delegiert asynchronen Aufruf
         while (!stop){
-            System.out.print(".");
-            try { Thread.sleep(1000);
-            } catch (InterruptedException e) { e.printStackTrace();
+            try{
+                synchronized (this) {
+                    wait(ThreadLocalRandom.current().nextInt(1000, 3001));
+                }
+            }catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            if(!stop){
+                counter.count();
             }
         }
     }
