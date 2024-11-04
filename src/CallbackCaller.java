@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class CallbackCaller extends Thread{
     CallbackClient client;
-		Cesar cesar;
+		Cesar cesar = new Cesar();
 
     public CallbackCaller (CallbackClient c) { client = c; this.start(); }
 
