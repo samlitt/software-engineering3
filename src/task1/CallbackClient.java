@@ -1,5 +1,7 @@
 import java.util.concurrent.ThreadLocalRandom;
 
+import static java.lang.System.exit;
+
 public class CallbackClient {
     boolean stop;
     Counter counter = new Counter();
@@ -18,6 +20,7 @@ public class CallbackClient {
                 counter.count();
             }
         }
+        exit(0);
     }
 
     public void callback(String string) {
