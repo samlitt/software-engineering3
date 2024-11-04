@@ -11,8 +11,8 @@ public class CallbackClient {
         }
     }
 
-    public void callback() {
-        System.out.println(" Ergebnis vom asynchr. Aufruf");
+    public void callback(String string) {
+        System.out.println(string);
         stop = true;
     }
     public static void main(String[] args) { new CallbackClient(); }
