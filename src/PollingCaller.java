@@ -4,7 +4,6 @@ public class PollingCaller extends Thread {
 		Cesar cesar = new Cesar();
 
     public void run() {
-        System.out.println(" entfernter Aufruf läuft u. wartet auf Taste ");
 				try {
 						int sleepTime = 4000 + (int)(Math.random() * (10000 - 4000));
 						Thread.sleep(sleepTime);
