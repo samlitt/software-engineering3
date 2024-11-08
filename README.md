@@ -14,5 +14,5 @@ Aufgabe a) kann über die Klassen `CallbackClient` und `PollingClient` ausgefüh
 Aufgabe b) wird über die Klasse `BMIClient` ausgeführt.
 
 ## Aufgabenteil 1 als PDF
-Das Dokument für die Abgabe kann mit Typst als PDF exportiert werden, 
+Das Dokument für die Abgabe kann mit [Typst](github.com/typst/typst) als PDF exportiert werden, 
 hierfür wird einfach `typst compile assigment_part1.typ <Dateiname>.pdf` ausgeführt.
