@@ -4,7 +4,7 @@
         #set align(center)
         #text(weight: "bold", size: 18pt, "Software Engineering 3")\
         #text(weight: "semibold", size: 14pt, "Bonusaufgabe - U02 Teil 1")\
-        #text(weight: "medium", size: 12pt, "Jan Eisenbeiß, Konrad Kappmeier, Vincent Klingemann, Tyler Rose")
+        #text(weight: "medium", size: 12pt, "Jan Eisenbeiß, Konrad Kappmeyer, Vincent Klingemann, Tyler Rose")
     ])
 ])
 
