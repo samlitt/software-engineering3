@@ -1,5 +1,5 @@
 # SE3 Bonusaufgabe
-Gruppenmitglieder: Jan Eisenbeiß, Konrad Kappmeier, Vincent Klingemann, Tyler Rose
+Gruppenmitglieder: Jan Eisenbeiß, Konrad Kappmeyer, Vincent Klingemann, Tyler Rose
 
 # Teil 1
 Siehe `SE3-U02-Teil1.pdf`.
