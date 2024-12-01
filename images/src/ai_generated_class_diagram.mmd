@@ -1,0 +1,27 @@
+classDiagram
+    class Bestellung {
+        -bestellNummer: String
+        -datum: Date
+        -gesamtPreis: Double
+        +berechneSumme()
+        +hinzufuegenPosition()
+    }
+    class BestellPosition {
+        -menge: Integer
+        -einzelpreis: Double
+        +berechneZwischensumme()
+    }
+    class Produkt {
+        -artikelNummer: String
+        -bezeichnung: String
+        -preis: Double
+        +getVerfuegbarkeit()
+    }
+    class Kunde {
+        -kundenNummer: String
+        -name: String
+        +erstelleBestellung()
+    }
+    Bestellung "1" *-- "n" BestellPosition
+    BestellPosition "n" --> "1" Produkt
+    Kunde "1" --> "n" Bestellung

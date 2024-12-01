@@ -18,4 +18,8 @@ Aufgabe b) wird über die Klasse `BMIClient` ausgeführt.
 
 ## Aufgabenteil 1 als PDF
 Das Dokument für die Abgabe kann mit [Typst](https://github.com/typst/typst) als PDF exportiert werden, 
-hierfür wird einfach `typst compile assigment_part1.typ <Dateiname>.pdf` ausgeführt.
+hierfür wird einfach `typst compile assignment_part1.typ <Dateiname>.pdf` ausgeführt.
+
+# Bonusaufgabe 2
+
+Im Package `ai` kann der KI generierte Code über die Klasse `Client` ausgegeben werden.

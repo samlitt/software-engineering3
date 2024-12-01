@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> WarenkorbFuellen
+    WarenkorbFuellen --> ZurKasseProzess
+    ZurKasseProzess --> Bezahlvorgang
+    Bezahlvorgang --> BestellungPruefen
+    BestellungPruefen --> BestellungBestaetigen: Erfolgreich
+    BestellungPruefen --> WarenkorbFuellen: Fehler
+    BestellungBestaetigen --> [*]
